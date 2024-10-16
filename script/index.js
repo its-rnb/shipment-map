@@ -48,7 +48,7 @@
     const routePath = new google.maps.Polyline({
       path: path,
       geodesic: true,
-      strokeColor: "#FF0000",
+      strokeColor: "#FF5500",
       strokeOpacity: 0.0,
       strokeWeight: 2,
       icons: [{
