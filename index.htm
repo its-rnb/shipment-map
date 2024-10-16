@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Shipment Route</title>
+  
+  <style>
+    /* Style for the map container */
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+  
+  <!-- Replace "key" with "key=INSERT_YOUR_API_KEY_HERE" with your api key
+  "key" left blank for dev purposes. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key&callback=initMap" async defer></script>
+
+</head>
+<body>
+
+  <h1>Shipment Route Map</h1>
+  <div id="map"></div>
+
+  <script src="../shipment-map/script/index.js"></script>
+
+</body>
+</html>
