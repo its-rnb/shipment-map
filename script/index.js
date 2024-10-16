@@ -1,5 +1,5 @@
   // Coordinates for the shipment journey
-  const start = { lat: 12.9715987, lng: 77.594566 }; // Benngaluru, India
+  const start = { lat: 12.9715987, lng: 77.594566 }; // Benngaluru, Karnataka, India
   const current = { lat: -25.274398, lng: 133.775136 }; // Finke, Australia
   const end = { lat: 40.712776, lng: -74.005974 }; // NY, USA
 
@@ -31,7 +31,7 @@
       label: "End",
     });
 
-    // Create a polyline to connect the points
+    // Create polyline to connect points
     const path = [
       { lat: start.lat, lng: start.lng },
       { lat: current.lat, lng: current.lng },
@@ -40,9 +40,9 @@
 
     // Define dashed line pattern
     const lineSymbol = {
-        path: 'M 0,-1 0,1', // Define a simple line
+        path: 'M 0,-1 0,1', // Define simple line
         strokeOpacity: 1,
-        scale: 4, // The size of the dashes
+        scale: 4, // Dash size
       };
     
     const routePath = new google.maps.Polyline({
@@ -54,10 +54,10 @@
       icons: [{
         icon: lineSymbol,
         offset: '0',
-        repeat: '20px' // Distance between dashes
+        repeat: '20px' // Space between dashes
       }]
     });
 
-    // Display the polyline on the map
+    // Display polyline on map
     routePath.setMap(map);
   }
